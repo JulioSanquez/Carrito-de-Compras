@@ -305,18 +305,6 @@ export function cart(db) {
 
   printCart()
 
-  function insertarInfo(offer) {
-    let html = `    
-      <h1 class="slider__title"><span class='resaltar'>NOVIEMBRE:</span> <br> ${offer.name}</h1>
-      <h2 class="slider__title" style="margin:0;">Descripción:</h2>
-      <p class="slider__description">
-        ${offer.description}
-      </p>
-      <span class="slider__price">${numberToCurrency(offer.price * .85)}</span>
-      `
-    sliderMessage.innerHTML = html
-  }
-
   insertarInfo(db.filter(d => d.offer === true)[0])
 
   productContainer.addEventListener('click', function (e) {
@@ -383,4 +371,17 @@ export function cart(db) {
     }
   })
 
+}
+
+
+export function insertarInfo(offer) {
+  let html = `    
+    <h1 class="slider__title"><span class='resaltar'>NOVIEMBRE:</span> <br> ${offer.name}</h1>
+    <h2 class="slider__title" style="margin:0;">Descripción:</h2>
+    <p class="slider__description">
+      ${offer.description}
+    </p>
+    <span class="slider__price">${numberToCurrency(offer.price * .85)}</span>
+    `
+  sliderMessage.innerHTML = html
 }

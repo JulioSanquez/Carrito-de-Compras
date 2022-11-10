@@ -101,7 +101,7 @@
 //     }
 // ]
 
-export function carrusel(db = bd) {
+export function carrusel(db = bd, insertarInfo) {
 
     let offerItems = db.filter(d => d.offer)
 
