@@ -109,7 +109,6 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     const slider = document.querySelector('#slider')
     const btnLeft = document.querySelector('.slider__btn--left')
     const btnRight = document.querySelector('.slider__btn--right')
-    const sliderMessage = document.getElementById('slider__message')
 
 
     function printCarrousel() {
@@ -129,6 +128,7 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     const delay = 3000
     function next() {
         let firstImg = document.querySelectorAll('.slider__img')[0]
+        const sliderMessage = document.getElementById('slider__message')
 
         console.log(sliderMessage)
 
@@ -144,10 +144,11 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     }
 
     function prev() {
+        const sliderMessage = document.getElementById('slider__message')
         let lastImg = document.querySelectorAll('.slider__img')
         lastImg = lastImg[lastImg.length - 1]
 
-        insertarInfo(lastImg.dataset)
+        insertarInfo(lastImg.dataset, sliderMessage)
 
         slider.style.marginLeft = '0'
         slider.style.transition = 'all 0.3s'
