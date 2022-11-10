@@ -317,7 +317,7 @@ export function cart(db, { insertarInfo, numberToCurrency }) {
   //   sliderMessage.innerHTML = html
   // }
 
-  insertarInfo(db.filter(d => d.offer === true)[0])
+  insertarInfo(db.filter(d => d.offer === true)[0], sliderMessage)
 
   productContainer.addEventListener('click', function (e) {
     const add = e.target.closest('.addToCart')
