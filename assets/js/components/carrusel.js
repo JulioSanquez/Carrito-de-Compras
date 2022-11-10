@@ -109,6 +109,7 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     const slider = document.querySelector('#slider')
     const btnLeft = document.querySelector('.slider__btn--left')
     const btnRight = document.querySelector('.slider__btn--right')
+    const sliderMessage = document.querySelector('.slider___message')
 
 
     function printCarrousel() {
@@ -129,7 +130,7 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     function next() {
         let firstImg = document.querySelectorAll('.slider__img')[0]
 
-        insertarInfo(firstImg.dataset)
+        insertarInfo(firstImg.dataset, sliderMessage)
 
         slider.style.marginLeft = '-200%'
         slider.style.transition = 'all 0.3s'
