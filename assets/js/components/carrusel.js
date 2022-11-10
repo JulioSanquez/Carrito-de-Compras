@@ -109,17 +109,16 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     const slider = document.querySelector('#slider')
     const btnLeft = document.querySelector('.slider__btn--left')
     const btnRight = document.querySelector('.slider__btn--right')
-    const sliderMessage = document.querySelector('.slider___message')
 
 
     function printCarrousel() {
         let html = ''
         for (const offer of offerItems) {
             html += `
-    <div class="slider__img" data-price="${offer.price}" data-name="${offer.name}" data-description="${offer.description}">
-      <img src="${offer.image}" alt="${offer.name}">
-    </div>
-    `
+                <div class="slider__img" data-price="${offer.price}" data-name="${offer.name}" data-description="${offer.description}">
+                <img src="${offer.image}" alt="${offer.name}">
+                </div>
+            `
         }
         slider.innerHTML = html
     }
