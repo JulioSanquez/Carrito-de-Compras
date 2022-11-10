@@ -749,6 +749,7 @@ body.dark-theme {
   right: -100%;
   padding: 3.5rem 2rem;
   transition: .4s;
+  overflow-y: scroll;
 }
 
 .cart__title-center {
