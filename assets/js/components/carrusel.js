@@ -129,6 +129,8 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     function next() {
         let firstImg = document.querySelectorAll('.slider__img')[0]
 
+        console.log(sliderMessage)
+
         insertarInfo(firstImg.dataset, sliderMessage)
 
         slider.style.marginLeft = '-200%'
