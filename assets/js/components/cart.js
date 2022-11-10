@@ -104,7 +104,7 @@
 // ]
 
 
-export function cart(db) {
+export function cart(db, insertarInfo) {
 
   const products = window.localStorage.getItem('productsDB') ? JSON.parse(window.localStorage.getItem('productsDB')) : db
 
@@ -305,17 +305,17 @@ export function cart(db) {
 
   printCart()
 
-  function insertarInfo(offer) {
-    let html = `    
-      <h1 class="slider__title"><span class='resaltar'>NOVIEMBRE:</span> <br> ${offer.name}</h1>
-      <h2 class="slider__title" style="margin:0;">Descripción:</h2>
-      <p class="slider__description">
-        ${offer.description}
-      </p>
-      <span class="slider__price">${numberToCurrency(offer.price * .85)}</span>
-      `
-    sliderMessage.innerHTML = html
-  }
+  // function insertarInfo(offer) {
+  //   let html = `    
+  //     <h1 class="slider__title"><span class='resaltar'>NOVIEMBRE:</span> <br> ${offer.name}</h1>
+  //     <h2 class="slider__title" style="margin:0;">Descripción:</h2>
+  //     <p class="slider__description">
+  //       ${offer.description}
+  //     </p>
+  //     <span class="slider__price">${numberToCurrency(offer.price * .85)}</span>
+  //     `
+  //   sliderMessage.innerHTML = html
+  // }
 
   insertarInfo(db.filter(d => d.offer === true)[0])
 
@@ -386,14 +386,3 @@ export function cart(db) {
 }
 
 
-export function insertarInfo(offer) {
-  let html = `    
-    <h1 class="slider__title"><span class='resaltar'>NOVIEMBRE:</span> <br> ${offer.name}</h1>
-    <h2 class="slider__title" style="margin:0;">Descripción:</h2>
-    <p class="slider__description">
-      ${offer.description}
-    </p>
-    <span class="slider__price">${numberToCurrency(offer.price * .85)}</span>
-    `
-  sliderMessage.innerHTML = html
-}

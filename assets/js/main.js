@@ -5,7 +5,7 @@ import { headerScroll } from './components/headerScroll.js'
 import { load } from './components/load.js'
 import { navMenu } from './components/navMenu.js'
 import { sectionActive } from './components/sectionActive.js'
-import { cart, insertarInfo } from './components/cart.js'
+import { cart } from './components/cart.js'
 import { carrusel } from './components/carrusel.js'
 
 const db = [
@@ -110,6 +110,18 @@ const db = [
   }
 ]
 
+const insertarInfo = function (offer) {
+  let html = `    
+    <h1 class="slider__title"><span class='resaltar'>NOVIEMBRE:</span> <br> ${offer.name}</h1>
+    <h2 class="slider__title" style="margin:0;">Descripción:</h2>
+    <p class="slider__description">
+      ${offer.description}
+    </p>
+    <span class="slider__price">${numberToCurrency(offer.price * .85)}</span>
+    `
+  sliderMessage.innerHTML = html
+}
+
 window.addEventListener('load', function () {
   load()
 })
@@ -129,6 +141,6 @@ document.addEventListener('DOMContentLoaded', function () {
       duration: 300
     }
   }).filter('all')
-  cart(db)
-  carrusel(db, cart.insertarInfo)
+  cart(db, insertarInfo)
+  carrusel(db, insertarInfo)
 })
