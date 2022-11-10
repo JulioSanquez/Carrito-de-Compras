@@ -123,6 +123,15 @@ const insertarInfo = function (offer) {
   sliderMessage.innerHTML = html
 }
 
+const numberToCurrency = function (value) {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD'
+  }).format(value)
+}
+
+const funciones = { insertarInfo, numberToCurrency }
+
 window.addEventListener('load', function () {
   load()
 })
@@ -142,6 +151,6 @@ document.addEventListener('DOMContentLoaded', function () {
       duration: 300
     }
   }).filter('all')
-  cart(db, insertarInfo)
-  carrusel(db, insertarInfo)
+  cart(db, funciones)
+  carrusel(db, funciones)
 })

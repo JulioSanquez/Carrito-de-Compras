@@ -104,7 +104,7 @@
 // ]
 
 
-export function cart(db, insertarInfo) {
+export function cart(db, { insertarInfo, numberToCurrency }) {
 
   const products = window.localStorage.getItem('productsDB') ? JSON.parse(window.localStorage.getItem('productsDB')) : db
 
@@ -296,12 +296,12 @@ export function cart(db, insertarInfo) {
     }
   }
 
-  function numberToCurrency(value) {
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD'
-    }).format(value)
-  }
+  // function numberToCurrency(value) {
+  //   return new Intl.NumberFormat('en-US', {
+  //     style: 'currency',
+  //     currency: 'USD'
+  //   }).format(value)
+  // }
 
   printCart()
 
@@ -365,7 +365,6 @@ export function cart(db, insertarInfo) {
   })
 
   const products2 = document.getElementById('products')
-  const img = document.querySelector('.products__img')
 
   products2.addEventListener('mouseover', e => {
 

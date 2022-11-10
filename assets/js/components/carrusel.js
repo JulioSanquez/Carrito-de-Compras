@@ -101,7 +101,7 @@
 //     }
 // ]
 
-export function carrusel(db = bd, insertarInfo) {
+export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
 
     let offerItems = db.filter(d => d.offer)
 
