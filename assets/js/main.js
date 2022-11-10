@@ -111,6 +111,7 @@ const db = [
 ]
 
 const insertarInfo = function (offer) {
+  console.log(offer)
   let html = `    
     <h1 class="slider__title"><span class='resaltar'>NOVIEMBRE:</span> <br> ${offer.name}</h1>
     <h2 class="slider__title" style="margin:0;">Descripción:</h2>
