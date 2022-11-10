@@ -52,8 +52,11 @@
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li class="nav__item">
+          <!-- <li class="nav__item">
             <a href="#home" class="nav__link active-link">Inicio</a>
+          </li> -->
+          <li class="nav__item">
+            <a href="#container-slider" class="nav__link active-link">Slider</a>
           </li>
           <li class="nav__item">
             <a href="#products" class="nav__link">Productos</a>
@@ -137,36 +140,20 @@
   <!--==================== MAIN ====================-->
   <main class="main">
     <!--==================== HOME ====================-->
-    <section class="home" id="home">
+    <!-- <section class="home" id="home">
       <div class="home__container container grid">
         <div class="home__img-bg">
           <img src="assets/img/home.png" alt="" class="home__img">
         </div>
-
-        <div class="home__data">
-          <h1 class="home__title">Nueva Sudadera <br> COLECCIONES 2022</h1>
-          <p class="home__description">
-            La nueva sudadera Hanes Midweight Crewneck importada de la serie 2022, con un moderno diseño.
-          </p>
-          <span class="home__price">$750.00</span>
-
-          <div class="home__btns">
-            <a href="#" class="button button--transparent button--small">
-              Descubrir
-            </a>
-
-            <button class="button home__button">AÑADIR AL CARRITO</button>
-          </div>
-        </div>
       </div>
-    </section>
+    </section> -->
     <!--==================== Slider ====================-->
     <section class="container-slider" id="container-slider">
       <h2 class=" slider__title"><span class="resaltar">Ofertas del Mes</span></h2>
       <div id="slider-cont">
         <div class="slider" id="slider">
         </div>
-        <div class="slider__message">
+        <div class="slider__message" id="slider__message">
 
         </div>
         <div class="slider__btn slider__btn--left">&#60;</div>
@@ -316,7 +303,8 @@
 
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/main.js" type="module"></script>
-  <script src="assets/js/cart.js"></script>
+  <!-- <script src="assets/js/components/cart.js"></script>
+  <script src="assets/js/components/carrusel.js"></script> -->
 </body>
 
 </html>

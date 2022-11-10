@@ -358,63 +358,11 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-/*=============== HOME ===============*/
-.home__container {
-  position: relative;
-  row-gap: 2.5rem;
-}
 
-.home__img {
-  width: auto;
-  transition: transform .3s ease;
-}
-
-.home__img:hover {
-  transform: translateY(-5px);
-}
-
-.home__img-bg {
-  background-color: var(--first-color);
-  width: 258px;
-  height: 430px;
-  border-radius: 0 0 12px 12px;
-  padding-bottom: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  justify-self: flex-end;
-  transform: translateX(1.5rem);
-}
-
-.home__title {
-  font-size: var(--biggest-font-size);
-  font-weight: var(--font-bold);
-  margin-bottom: var(--mb-1);
-}
-
-.home__description {
-  margin-bottom: var(--mb-1-5);
-}
-
-.home__price {
-  display: inline-block;
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-medium);
-  color: var(--first-color);
-  margin-bottom: var(--mb-3);
-}
-
-.home__btns {
-  display: flex;
-  align-items: center;
-}
-
-.home__button {
-  box-shadow: 0 12px 24px hsla(0, 0%, 10%, .2);
-}
 
 /*=============== SLIDER ===============*/
 .container-slider {
+  color: whitesmoke;
   width: 90%;
   max-width: 1024px;
   max-height: 90%;
@@ -428,7 +376,7 @@ body.dark-theme {
   padding: .45rem 0;
   text-align: center;
   font-size: 3rem;
-  /* color: ; */
+  color: var(--first-color);
 }
 
 .slider {
@@ -461,10 +409,40 @@ body.dark-theme {
   bottom: -0%;
   left: 0;
 
+  padding: 0 5rem;
+
   background-color: #00000086;
-  width: 30%;
-  height: calc(100% - 9.5rem);
+  width: 50%;
+  height: calc(100% - 10rem);
   z-index: 1;
+}
+
+
+.slider__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-1);
+}
+
+.slider__description {
+  margin-bottom: var(--mb-1-5);
+}
+
+.slider__price {
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  margin-bottom: var(--mb-3);
+}
+
+.slider__btns {
+  display: flex;
+  align-items: center;
+}
+
+.slider__button {
+  box-shadow: 0 12px 24px hsla(0, 0%, 10%, .2);
 }
 
 @media (max-width: 780px) {

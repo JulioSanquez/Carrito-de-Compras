@@ -1,4 +1,107 @@
-export function carrusel(db) {
+
+// const db = [
+//     {
+//         id: 1,
+//         name: 'Camisa',
+//         size: 'Ch',
+//         price: 456,
+//         image: 'assets/img/featured1.png',
+//         imageHover: 'assets/img/featured2.png',
+//         category: 'hoodies',
+//         quantity: 10,
+//         offer: false
+//     },
+//     {
+//         id: 2,
+//         name: 'Playera',
+//         size: 'Ch',
+//         price: 627,
+//         image: 'assets/img/featured2.png',
+//         imageHover: 'assets/img/featured3.png',
+//         category: 'shirts',
+//         quantity: 12,
+//         offer: true
+//     },
+//     {
+//         id: 3,
+//         name: 'Sudadera',
+//         size: 'Ch',
+//         price: 586,
+//         image: 'assets/img/featured3.png',
+//         imageHover: 'assets/img/featured1.png',
+//         category: 'sweatshirts',
+//         quantity: 15,
+//         offer: false
+//     },
+//     {
+//         id: 4,
+//         name: 'Camisa',
+//         size: 'M',
+//         price: 556,
+//         image: 'assets/img/featured1.png',
+//         imageHover: 'assets/img/featured2.png',
+//         category: 'hoodies',
+//         quantity: 12,
+//         offer: false
+//     },
+//     {
+//         id: 5,
+//         name: 'Playera',
+//         size: 'M',
+//         price: 727,
+//         image: 'assets/img/featured2.png',
+//         imageHover: 'assets/img/featured3.png',
+//         category: 'shirts',
+//         quantity: 12,
+//         offer: false
+//     },
+//     {
+//         id: 6,
+//         name: 'Sudadera',
+//         size: 'M',
+//         price: 686,
+//         image: 'assets/img/featured3.png',
+//         imageHover: 'assets/img/featured1.png',
+//         category: 'sweatshirts',
+//         quantity: 20,
+//         offer: false
+//     },
+//     {
+//         id: 7,
+//         name: 'Camisa',
+//         size: 'G',
+//         price: 656,
+//         image: 'assets/img/featured1.png',
+//         imageHover: 'assets/img/featured2.png',
+//         category: 'hoodies',
+//         quantity: 25,
+//         offer: true
+//     },
+//     {
+//         id: 8,
+//         name: 'Playera',
+//         size: 'G',
+//         price: 827,
+//         image: 'assets/img/featured2.png',
+//         imageHover: 'assets/img/featured3.png',
+//         category: 'shirts',
+//         quantity: 18,
+//         offer: false
+//     },
+//     {
+//         id: 9,
+//         name: 'Sudadera',
+//         size: 'G',
+//         price: 786,
+//         image: 'assets/img/featured3.png',
+//         imageHover: 'assets/img/featured1.png',
+//         category: 'sweatshirts',
+//         quantity: 13,
+//         offer: true
+//     }
+// ]
+
+export function carrusel(db = bd) {
 
     let offerItems = db.filter(d => d.offer)
 
@@ -12,7 +115,7 @@ export function carrusel(db) {
         let html = ''
         for (const offer of offerItems) {
             html += `
-    <div class="slider__img">
+    <div class="slider__img" data-price="${offer.price}" data-name="${offer.name}" data-description="${offer.description}">
       <img src="${offer.image}" alt="${offer.name}">
     </div>
     `
@@ -22,9 +125,12 @@ export function carrusel(db) {
     printCarrousel()
 
     let loop
-    const delay = 1000
+    const delay = 3000
     function next() {
         let firstImg = document.querySelectorAll('.slider__img')[0]
+
+        insertarInfo(firstImg.dataset)
+
         slider.style.marginLeft = '-200%'
         slider.style.transition = 'all 0.3s'
         setTimeout(() => {
@@ -37,6 +143,9 @@ export function carrusel(db) {
     function prev() {
         let lastImg = document.querySelectorAll('.slider__img')
         lastImg = lastImg[lastImg.length - 1]
+
+        insertarInfo(lastImg.dataset)
+
         slider.style.marginLeft = '0'
         slider.style.transition = 'all 0.3s'
         setTimeout(() => {

@@ -1,5 +1,109 @@
 // Carrito v1
 // #1 BASE DE DATOS
+
+// const db = [
+//   {
+//     id: 1,
+//     name: 'Camisa',
+//     description: 'Es un juego de accion',
+//     price: 456,
+//     image: 'assets/img/featured1.png',
+//     imageHover: 'assets/img/featured2.png',
+//     category: 'hoodies',
+//     quantity: 10,
+//     offer: false
+//   },
+//   {
+//     id: 2,
+//     name: 'Playera',
+//     description: 'Es un juego de suspenso',
+//     price: 627,
+//     image: 'assets/img/featured2.png',
+//     imageHover: 'assets/img/featured3.png',
+//     category: 'shirts',
+//     quantity: 12,
+//     offer: true
+//   },
+//   {
+//     id: 3,
+//     name: 'Sudadera',
+//     description: 'Es un juego futurista',
+//     price: 586,
+//     image: 'assets/img/featured3.png',
+//     imageHover: 'assets/img/featured1.png',
+//     category: 'sweatshirts',
+//     quantity: 15,
+//     offer: false
+//   },
+//   {
+//     id: 4,
+//     name: 'Camisa',
+//     description: 'Es un juego de accion',
+//     price: 556,
+//     image: 'assets/img/featured1.png',
+//     imageHover: 'assets/img/featured2.png',
+//     category: 'hoodies',
+//     quantity: 12,
+//     offer: false
+//   },
+//   {
+//     id: 5,
+//     name: 'Playera',
+//     description: 'Es un juego de accion',
+//     price: 727,
+//     image: 'assets/img/featured2.png',
+//     imageHover: 'assets/img/featured3.png',
+//     category: 'shirts',
+//     quantity: 12,
+//     offer: false
+//   },
+//   {
+//     id: 6,
+//     name: 'Sudadera',
+//     description: 'Es un juego de accion',
+//     price: 686,
+//     image: 'assets/img/featured3.png',
+//     imageHover: 'assets/img/featured1.png',
+//     category: 'sweatshirts',
+//     quantity: 20,
+//     offer: false
+//   },
+//   {
+//     id: 7,
+//     name: 'Camisa',
+//     description: 'Sera la mejor historia que jugaras en tu vida, no hay compración',
+//     price: 656,
+//     image: 'assets/img/featured1.png',
+//     imageHover: 'assets/img/featured2.png',
+//     category: 'hoodies',
+//     quantity: 25,
+//     offer: true
+//   },
+//   {
+//     id: 8,
+//     name: 'Playera',
+//     description: 'Es un juego encarnizado donde sufriras por cumplir tus objetivos',
+//     price: 827,
+//     image: 'assets/img/featured2.png',
+//     imageHover: 'assets/img/featured3.png',
+//     category: 'shirts',
+//     quantity: 18,
+//     offer: false
+//   },
+//   {
+//     id: 9,
+//     name: 'Sudadera',
+//     description: 'Es un juego de rol multiple',
+//     price: 786,
+//     image: 'assets/img/featured3.png',
+//     imageHover: 'assets/img/featured1.png',
+//     category: 'sweatshirts',
+//     quantity: 13,
+//     offer: true
+//   }
+// ]
+
+
 export function cart(db) {
 
   const products = window.localStorage.getItem('productsDB') ? JSON.parse(window.localStorage.getItem('productsDB')) : db
@@ -43,7 +147,7 @@ export function cart(db) {
   const cartCount = document.getElementById('cart-count')
   const itemsCount = document.getElementById('items-count')
   const cartTotal = document.getElementById('cart-total')
-  const inicio = document.getElementById('home')
+  const sliderMessage = document.getElementById('slider__message')
 
   function printCart() {
     let html = ''
@@ -201,36 +305,19 @@ export function cart(db) {
 
   printCart()
 
-  function insertarInicio() {
-    const oferta = db.filter(d => d.offer === true)[0]
-    // console.log(oferta)
-    let html = `
-      <div class="home__container container grid">
-        <div class="home__img-bg">
-          <img src="assets/img/home.png" alt="" class="home__img">
-        </div>
-  
-        <div class="home__data">
-          <h1 class="home__title"><span class='resaltar'>OFERTA NOVIEMBRE:</span> <br> Nueva ${oferta.name} ${oferta.size} <br> COLECCIONES 2022</h1>
-          <p class="home__description">
-            La nueva sudadera Hanes Midweight Crewneck importada de la serie 2022, con un moderno diseño.
-          </p>
-          <span class="home__price">${numberToCurrency(oferta.price * .85)}</span>
-  
-          <div class="home__btns">
-            <a href="#products" class="button button--transparent button--small">
-              Descubrir
-            </a>
-  
-            <button class="button home__button">AÑADIR AL CARRITO</button>
-          </div>
-        </div>
-      </div>
-    `
-    inicio.innerHTML = html
+  function insertarInfo(offer) {
+    let html = `    
+      <h1 class="slider__title"><span class='resaltar'>NOVIEMBRE:</span> <br> ${offer.name}</h1>
+      <h2 class="slider__title" style="margin:0;">Descripción:</h2>
+      <p class="slider__description">
+        ${offer.description}
+      </p>
+      <span class="slider__price">${numberToCurrency(offer.price * .85)}</span>
+      `
+    sliderMessage.innerHTML = html
   }
 
-  insertarInicio()
+  insertarInfo(db.filter(d => d.offer === true)[0])
 
   productContainer.addEventListener('click', function (e) {
     const add = e.target.closest('.addToCart')
