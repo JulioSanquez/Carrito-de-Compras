@@ -6,7 +6,7 @@ import { load } from './components/load.js'
 import { navMenu } from './components/navMenu.js'
 import { sectionActive } from './components/sectionActive.js'
 import { cart } from './components/cart.js'
-import { carrusel } from '. /components/carrusel.js'
+import { carrusel } from './components/carrusel.js'
 
 const db = [
   {
@@ -131,5 +131,4 @@ document.addEventListener('DOMContentLoaded', function () {
   }).filter('all')
   cart(db)
   carrusel(db)
-
 })
