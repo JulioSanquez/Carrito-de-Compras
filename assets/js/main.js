@@ -8,11 +8,12 @@ import { sectionActive } from './components/sectionActive.js'
 import { cart } from './components/cart.js'
 import { carrusel } from './components/carrusel.js'
 
+
 const db = [
   {
     id: 1,
     name: 'Camisa',
-    size: 'Ch',
+    description: 'Es un juego de accion',
     price: 456,
     image: 'assets/img/featured1.png',
     imageHover: 'assets/img/featured2.png',
@@ -23,7 +24,7 @@ const db = [
   {
     id: 2,
     name: 'Playera',
-    size: 'Ch',
+    description: 'Es un juego de suspenso',
     price: 627,
     image: 'assets/img/featured2.png',
     imageHover: 'assets/img/featured3.png',
@@ -34,7 +35,7 @@ const db = [
   {
     id: 3,
     name: 'Sudadera',
-    size: 'Ch',
+    description: 'Es un juego futurista',
     price: 586,
     image: 'assets/img/featured3.png',
     imageHover: 'assets/img/featured1.png',
@@ -45,7 +46,7 @@ const db = [
   {
     id: 4,
     name: 'Camisa',
-    size: 'M',
+    description: 'Es un juego de accion',
     price: 556,
     image: 'assets/img/featured1.png',
     imageHover: 'assets/img/featured2.png',
@@ -56,7 +57,7 @@ const db = [
   {
     id: 5,
     name: 'Playera',
-    size: 'M',
+    description: 'Es un juego de accion',
     price: 727,
     image: 'assets/img/featured2.png',
     imageHover: 'assets/img/featured3.png',
@@ -67,7 +68,7 @@ const db = [
   {
     id: 6,
     name: 'Sudadera',
-    size: 'M',
+    description: 'Es un juego de accion',
     price: 686,
     image: 'assets/img/featured3.png',
     imageHover: 'assets/img/featured1.png',
@@ -78,7 +79,7 @@ const db = [
   {
     id: 7,
     name: 'Camisa',
-    size: 'G',
+    description: 'Sera la mejor historia que jugaras en tu vida, no hay compración',
     price: 656,
     image: 'assets/img/featured1.png',
     imageHover: 'assets/img/featured2.png',
@@ -89,7 +90,7 @@ const db = [
   {
     id: 8,
     name: 'Playera',
-    size: 'G',
+    description: 'Es un juego encarnizado donde sufriras por cumplir tus objetivos',
     price: 827,
     image: 'assets/img/featured2.png',
     imageHover: 'assets/img/featured3.png',
@@ -100,7 +101,7 @@ const db = [
   {
     id: 9,
     name: 'Sudadera',
-    size: 'G',
+    description: 'Es un juego de rol multiple',
     price: 786,
     image: 'assets/img/featured3.png',
     imageHover: 'assets/img/featured1.png',
