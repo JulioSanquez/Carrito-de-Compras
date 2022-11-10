@@ -130,5 +130,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }).filter('all')
   cart(db)
-  carrusel(db, insertarInfo)
+  carrusel(db, cart.insertarInfo)
 })
