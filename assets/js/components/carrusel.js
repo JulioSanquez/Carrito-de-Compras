@@ -130,7 +130,7 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
         let firstImg = document.querySelectorAll('.slider__img')[0]
         const sliderMessage = document.getElementById('slider__message')
 
-        console.log(sliderMessage)
+        // console.log(sliderMessage)
 
         insertarInfo(firstImg.dataset, sliderMessage)
 
@@ -148,6 +148,8 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
         let lastImg = document.querySelectorAll('.slider__img')
         lastImg = lastImg[lastImg.length - 1]
 
+        console.log(sliderMessage)
+        console.log(lastImg.dataset)
         insertarInfo(lastImg.dataset, sliderMessage)
 
         slider.style.marginLeft = '0'
