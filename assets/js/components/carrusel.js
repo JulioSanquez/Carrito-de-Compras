@@ -109,6 +109,7 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     const slider = document.querySelector('#slider')
     const btnLeft = document.querySelector('.slider__btn--left')
     const btnRight = document.querySelector('.slider__btn--right')
+    const sliderMessage = document.getElementById('slider__message')
 
 
     function printCarrousel() {
