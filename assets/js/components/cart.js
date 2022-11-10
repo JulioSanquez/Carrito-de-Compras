@@ -264,7 +264,7 @@ export function cart(db, { insertarInfo, numberToCurrency }) {
 
     if (e.target.matches('.products__img')) {
       e.target.src = db.filter(d => e.target.src.includes(d.image))[0].imageHover
-      console.log(e.target)
+      // console.log(e.target)
     }
 
   })
@@ -272,7 +272,7 @@ export function cart(db, { insertarInfo, numberToCurrency }) {
   products2.addEventListener('mouseout', e => {
     if (e.target.matches('.products__img')) {
       e.target.src = db.filter(d => e.target.src.includes(d.image))[0].imageHover
-      console.log(e.target)
+      // console.log(e.target)
     }
   })
 
