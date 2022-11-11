@@ -18,22 +18,22 @@
   --border-color: hsl(0, 0%, 94%);
 
   /*========== Font and typography ==========*/
-  --body-font: 'Roboto', sans-serif;
+  --body-font: "Roboto", sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-bold: 700;
 
   /*========== Margenes Bottom ==========*/
-  --mb-0-5: .5rem;
-  --mb-0-75: .75rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
   --mb-1: 1rem;
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
@@ -52,8 +52,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -80,7 +80,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   /*For animation dark mode*/
-  transition: .4s;
+  transition: 0.4s;
 }
 
 h1,
@@ -116,7 +116,7 @@ body.dark-theme {
   --first-color: hsl(182, 53%, 74%);
   --button-color: hsl(246, 16%, 12%);
   --button-color-alt: hsl(0, 0%, 28%);
-  --card-color: hsla(246, 16%, 5%, .5);
+  --card-color: hsla(246, 16%, 5%, 0.5);
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 75%);
   --body-color: hsl(249, 19%, 14%);
@@ -142,7 +142,7 @@ body.dark-theme {
 }
 
 .dark-theme .scroll-header {
-  box-shadow: 0 1px 4px hsla(0, 0%, 4%, .3);
+  box-shadow: 0 1px 4px hsla(0, 0%, 4%, 0.3);
 }
 
 .scroll-header .change-theme,
@@ -184,7 +184,7 @@ body.dark-theme {
 }
 
 .section__title::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -1rem;
   left: 0;
@@ -209,7 +209,6 @@ body.dark-theme {
   justify-content: center;
   align-items: center;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(244,705,655)'%3E%3Cstop offset='0' stop-color='%2384A98C'/%3E%3Cstop offset='1' stop-color='%232F3E46'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='348' height='290' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.08'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-
 }
 
 .load .load__gif {
@@ -225,20 +224,10 @@ body.dark-theme {
     /* transform: scale(0.1); */
   }
 
-
   100% {
     transform: rotate(360deg);
-
   }
 }
-
-
-
-
-
-
-
-
 
 /* @keyframes scroll {
   0% {
@@ -263,7 +252,7 @@ body.dark-theme {
   left: 0;
   z-index: var(--z-fixed);
   /*For animation dark mode*/
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .nav {
@@ -286,7 +275,7 @@ body.dark-theme {
   letter-spacing: 1px;
   display: inline-flex;
   align-items: center;
-  column-gap: .25rem;
+  column-gap: 0.25rem;
 }
 
 .nav__logo-icon {
@@ -317,7 +306,7 @@ body.dark-theme {
   right: -7px;
   width: 16px;
   height: 16px;
-  padding: .25rem;
+  padding: 0.25rem;
   background-color: var(--title-color);
   border-radius: 50%;
   font-size: 10px;
@@ -336,7 +325,7 @@ body.dark-theme {
     width: 100%;
     height: 100%;
     padding: 6rem 2rem 3.5rem;
-    transition: .3s;
+    transition: 0.3s;
   }
 }
 
@@ -352,7 +341,7 @@ body.dark-theme {
   font-weight: var(--font-medium);
   text-transform: uppercase;
   font-size: var(--h2-font-size);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .nav__link:hover {
@@ -362,7 +351,7 @@ body.dark-theme {
 .nav__close {
   font-size: 2rem;
   position: absolute;
-  top: .9rem;
+  top: 0.9rem;
   right: 1.25rem;
   cursor: pointer;
 }
@@ -375,15 +364,13 @@ body.dark-theme {
 /* Change background header */
 .scroll-header {
   background-color: var(--container-color);
-  box-shadow: 0 1px 4px hsla(0, 4%, 15%, .10);
+  box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
 }
 
 /* Active link */
 .active-link {
   color: var(--first-color);
 }
-
-
 
 /*=============== SLIDER ===============*/
 .container-slider {
@@ -398,7 +385,7 @@ body.dark-theme {
 
 .slider__title {
   margin-top: 5rem;
-  padding: .45rem 0;
+  padding: 0.45rem 0;
   text-align: center;
   font-size: 3rem;
   color: var(--first-color);
@@ -425,7 +412,7 @@ body.dark-theme {
 .slider img {
   /* margin: auto; */
   display: block;
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
@@ -441,7 +428,6 @@ body.dark-theme {
   height: calc(100% - 10rem);
   z-index: 1;
 }
-
 
 .slider__title {
   font-size: var(--biggest-font-size);
@@ -467,12 +453,11 @@ body.dark-theme {
 }
 
 .slider__button {
-  box-shadow: 0 12px 24px hsla(0, 0%, 10%, .2);
+  box-shadow: 0 12px 24px hsla(0, 0%, 10%, 0.2);
 }
 
 @media (max-width: 780px) {
   .slider__message {
-
     width: 100%;
     height: 20%;
   }
@@ -506,21 +491,22 @@ body.dark-theme {
   right: 10px;
 }
 
-
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
   background-color: var(--button-color);
-  color: #FFF;
+  color: #fff;
   padding: 1.25rem 2rem;
   border-radius: 5px;
   font-weight: var(--font-medium);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .button:hover {
+  transform: scale(1.5);
   background-color: var(--first-color);
   color: var(--body-color);
+  transition: 0.3s linear;
 }
 
 .button--transparent {
@@ -557,7 +543,7 @@ body.dark-theme {
 }
 
 .products__line::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
   height: 40px;
@@ -575,7 +561,7 @@ body.dark-theme {
 .products__title {
   font-size: var(--h3-font-size);
   color: var(--text-color);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .products__stock {
@@ -590,19 +576,19 @@ body.dark-theme {
 
 .products__card {
   background-color: var(--container-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .products__img {
   width: 150px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .products__shape {
   background-color: var(--card-color);
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
   text-align: center;
-  padding: .25rem 0;
+  padding: 0.25rem 0;
 }
 
 .products__data {
@@ -614,7 +600,7 @@ body.dark-theme {
   font-size: var(--h3-font-size);
   display: flex;
   align-items: center;
-  gap: .25rem;
+  gap: 0.25rem;
   color: var(--first-color);
 }
 
@@ -630,7 +616,7 @@ body.dark-theme {
 
 .products__button {
   border-radius: 50%;
-  padding: .625rem;
+  padding: 0.625rem;
   display: inline-flex;
   font-size: 1.25rem;
   position: absolute;
@@ -638,12 +624,21 @@ body.dark-theme {
   top: -1.25rem;
   background-color: var(--body-color);
   color: var(--title-color);
-  box-shadow: 0 4px 12px hsla(206, 4%, 4%, .2);
+  box-shadow: 0 4px 12px hsla(206, 4%, 4%, 0.2);
+}
+/* overlay para agrandar la portada al pasar el mouse */
+.products__button:active {
+  transform: scale(0.8);
+}
+.products__img:hover {
+  transition: 0.3s ease-in;
+  transform: scale(1.4);
+  /* filter: blur(1px); */
 }
 
-.products__card:hover .products__img {
-  transform: translateY(-.25rem);
-}
+/* .products__card:hover {
+  transform: translateY(-0.25rem);
+} */
 
 /* Active link products */
 .active-product .products__title {
@@ -654,7 +649,6 @@ body.dark-theme {
 .footer {
   background-color: var(--card-color);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(244,705,655)'%3E%3Cstop offset='0' stop-color='%2384A98C'/%3E%3Cstop offset='1' stop-color='%232F3E46'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='348' height='290' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.08'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-
 }
 
 .footer__container {
@@ -672,7 +666,7 @@ body.dark-theme {
 .footer__links {
   display: flex;
   flex-direction: column;
-  row-gap: .75rem;
+  row-gap: 0.75rem;
 }
 
 .footer__link {
@@ -711,12 +705,12 @@ body.dark-theme {
   right: 1rem;
   bottom: -30%;
   background-color: var(--container-color);
-  box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
+  box-shadow: 0 4px 12px hsla(0, 0%, 20%, 0.1);
   display: inline-flex;
-  padding: .25rem;
+  padding: 0.25rem;
   z-index: var(--z-tooltip);
-  opacity: .8;
-  transition: .4s;
+  opacity: 0.8;
+  transition: 0.4s;
 }
 
 .scrollup:hover {
@@ -735,7 +729,7 @@ body.dark-theme {
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-  width: .6rem;
+  width: 0.6rem;
   background: hsl(0, 0%, 74%);
 }
 
@@ -759,7 +753,7 @@ body.dark-theme {
   top: 0;
   right: -100%;
   padding: 3.5rem 2rem;
-  transition: .4s;
+  transition: 0.4s;
   overflow-y: scroll;
 }
 
@@ -773,13 +767,12 @@ body.dark-theme {
   gap: 0.5rem;
 }
 
-
 .cart__close {
   font-size: 2rem;
   color: var(--title-color);
   position: absolute;
   top: 1.25rem;
-  right: .9rem;
+  right: 0.9rem;
   cursor: pointer;
 }
 
@@ -797,7 +790,7 @@ body.dark-theme {
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .cart__empty {
@@ -812,14 +805,14 @@ body.dark-theme {
   background-color: var(--container-color);
   width: 85%;
   height: auto;
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   margin: 0 auto 1rem;
   border: 1px solid var(--border-color);
 }
 
 @media screen and (min-width: 400px) {
   .cart__card {
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
   }
 
   .cart__box {
@@ -835,7 +828,7 @@ body.dark-theme {
 
 .cart__title {
   font-size: var(--normal-font-size);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -865,7 +858,6 @@ body.dark-theme {
   justify-content: space-between;
   font-size: var(--small-font-size);
   margin: var(--mb-0-75) 0;
-
 }
 
 .cart__subtotal-price {
@@ -877,7 +869,7 @@ body.dark-theme {
 .cart__amount,
 .cart__amount-content {
   display: grid;
-  grid-template-columns: 2fr 1fr .5fr;
+  grid-template-columns: 2fr 1fr 0.5fr;
   column-gap: 1rem;
   align-items: baseline;
 }
@@ -898,7 +890,7 @@ body.dark-theme {
 
 .cart__amount-box {
   display: inline-flex;
-  padding: .25rem;
+  padding: 0.25rem;
   background-color: var(--container-color);
   border: 1px solid var(--border-color);
   cursor: pointer;
@@ -937,7 +929,7 @@ body.dark-theme {
 
 .cart__btn:disabled {
   cursor: not-allowed;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .cart__btn:disabled:hover {
@@ -994,7 +986,7 @@ body.dark-theme {
 
   .cart {
     width: 420px;
-    box-shadow: -2px 0 4px hsla(0, 0%, 15%, .1);
+    box-shadow: -2px 0 4px hsla(0, 0%, 15%, 0.1);
   }
 
   .nav {
@@ -1089,7 +1081,7 @@ body.dark-theme {
   }
 
   .products__card {
-    border-radius: .75rem;
+    border-radius: 0.75rem;
   }
 
   .products__img {
@@ -1098,7 +1090,7 @@ body.dark-theme {
 
   .products__shape {
     padding: 2rem 0;
-    border-radius: .75rem .75rem 0 0;
+    border-radius: 0.75rem 0.75rem 0 0;
   }
 
   .products__data {
@@ -1111,7 +1103,7 @@ body.dark-theme {
 
   .products__button {
     font-size: 1.5rem;
-    padding: .75rem;
+    padding: 0.75rem;
     right: 1.5rem;
     top: -1.5rem;
   }
