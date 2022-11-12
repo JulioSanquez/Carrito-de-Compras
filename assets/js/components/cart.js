@@ -12,7 +12,7 @@ export function cart(db, { insertarInfo, numberToCurrency }) {
       html += `
       <article class="products__card ${product.category}">
         <div class="products__shape">
-          <img src="${product.image}" alt="${product.name}-${product.size}" class="products__img">
+          <img src="${product.image}" alt="${product.name}" class="products__img">
         </div>
   
         <div class="products__data">
@@ -190,26 +190,7 @@ export function cart(db, { insertarInfo, numberToCurrency }) {
     }
   }
 
-  // function numberToCurrency(value) {
-  //   return new Intl.NumberFormat('en-US', {
-  //     style: 'currency',
-  //     currency: 'USD'
-  //   }).format(value)
-  // }
-
   printCart()
-
-  // function insertarInfo(offer) {
-  //   let html = `    
-  //     <h1 class="slider__title"><span class='resaltar'>NOVIEMBRE:</span> <br> ${offer.name}</h1>
-  //     <h2 class="slider__title" style="margin:0;">Descripción:</h2>
-  //     <p class="slider__description">
-  //       ${offer.description}
-  //     </p>
-  //     <span class="slider__price">${numberToCurrency(offer.price * .85)}</span>
-  //     `
-  //   sliderMessage.innerHTML = html
-  // }
 
   insertarInfo(db.filter(d => d.offer === true)[0], sliderMessage)
 
@@ -264,15 +245,13 @@ export function cart(db, { insertarInfo, numberToCurrency }) {
 
     if (e.target.matches('.products__img')) {
       e.target.src = db.filter(d => e.target.src.includes(d.image))[0].imageHover
-      // console.log(e.target)
     }
 
   })
 
   products2.addEventListener('mouseout', e => {
     if (e.target.matches('.products__img')) {
-      e.target.src = db.filter(d => e.target.src.includes(d.image))[0].imageHover
-      // console.log(e.target)
+      e.target.src = db.filter(d => e.target.src.includes(d.imageHover))[0].image
     }
   })
 
