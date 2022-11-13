@@ -43,7 +43,7 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
   function prev() {
     const sliderMessage = document.getElementById("slider__message");
     let lastImg = document.querySelectorAll(".slider__img");
-    let firstImg = lastImg[lastImg.length + 1];
+    let firstImg = lastImg[2];
     lastImg = lastImg[lastImg.length - 1];
 
     insertarInfo(firstImg.dataset, sliderMessage);
