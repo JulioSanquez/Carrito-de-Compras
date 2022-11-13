@@ -49,13 +49,13 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     console.log(sliderMessage)
     console.log(lastImg2.dataset)
 
-    insertarInfo(lastImg.dataset, sliderMessage);
+    insertarInfo(lastImg2.dataset, sliderMessage);
 
     slider.style.marginLeft = "0";
     slider.style.transition = "all 0.3s";
     setTimeout(() => {
       slider.style.transition = "none";
-      slider.insertAdjacentElement("afterbegin", lastImg2);
+      slider.insertAdjacentElement("afterbegin", lastImg1);
       slider.style.marginLeft = "-100%";
     }, 300);
   }
