@@ -55,7 +55,7 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     slider.style.transition = "all 0.3s";
     setTimeout(() => {
       slider.style.transition = "none";
-      slider.insertAdjacentElement("afterbegin", lastImg1);
+      slider.insertAdjacentElement("afterbegin", lastImg2);
       slider.style.marginLeft = "-100%";
     }, 300);
   }
