@@ -42,11 +42,11 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
     const sliderMessage = document.getElementById("slider__message");
     let lastImg = document.querySelectorAll(".slider__img");
     let lastImg1 = lastImg[lastImg.length - 1];
-    let lastImg2 = lastImg[lastImg.length];
+    let lastImg2 = lastImg[lastImg.length - 2];
 
-    // console.log(sliderMessage)
-    // console.log(lastImg1.dataset)
-    // console.log(lastImg2.dataset)
+    console.log(sliderMessage)
+    console.log(lastImg1.dataset)
+    console.log(lastImg2.dataset)
     insertarInfo(lastImg2.dataset, sliderMessage);
 
     slider.style.marginLeft = "0";
