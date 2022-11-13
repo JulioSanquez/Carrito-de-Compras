@@ -45,6 +45,7 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
 
     console.log(sliderMessage)
     console.log(lastImg1.dataset)
+
     insertarInfo(lastImg.dataset, sliderMessage);
 
     slider.style.marginLeft = "0";
