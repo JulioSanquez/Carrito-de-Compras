@@ -23,7 +23,8 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
   const delay = 3000;
   function next() {
     let firstImg = document.querySelectorAll(".slider__img")[0];
-    let firstImg2 = document.querySelectorAll(".slider__img")[1];
+    let firstImg2 = document.querySelectorAll(".slider__img");
+    firstImg2 = firstImg2[firstImg2.length - 1]
     const sliderMessage = document.getElementById("slider__message");
 
     // console.log(sliderMessage)
