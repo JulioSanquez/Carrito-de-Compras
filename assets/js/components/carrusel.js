@@ -43,19 +43,16 @@ export function carrusel(db = bd, { insertarInfo, numberToCurrency }) {
   function prev() {
     const sliderMessage = document.getElementById("slider__message");
     let lastImg = document.querySelectorAll(".slider__img");
-    let lastImg1 = lastImg[lastImg.length - 1];
-    let lastImg2 = lastImg[lastImg.length - 2];
+    lastImg = lastImg[lastImg.length - 1];
+    let firstImg = lastImg[0];
 
-    console.log(sliderMessage)
-    console.log(lastImg2.dataset)
-
-    insertarInfo(lastImg2.dataset, sliderMessage);
+    insertarInfo(firstImg.dataset, sliderMessage);
 
     slider.style.marginLeft = "0";
     slider.style.transition = "all 0.3s";
     setTimeout(() => {
       slider.style.transition = "none";
-      slider.insertAdjacentElement("afterbegin", lastImg1);
+      slider.insertAdjacentElement("afterbegin", lastImg);
       slider.style.marginLeft = "-100%";
     }, 300);
   }
